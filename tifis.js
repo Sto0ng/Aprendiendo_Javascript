@@ -74,18 +74,33 @@ function teclado (datos)
 	 }
 	 if (codigo == teclas.DOWN)
 	 {
-	 		if(tifis.x < 110 ^ tifis.y < 300 ^ tifis.y >240)
+	 	if (tifis.y < 450)
+	 	{
+	 		if(tifis.y < 150 && tifis.x < 130)
 	 		{
 	 		tifis.y += tifis.velocidad;
 	 		}
-	 		if(tifis.y < 150)
-	 		{
-	 		tifis.y += tifis.velocidad;
-	 		}
-	 		//if(tifis.y > 240 ^ tifis.x < 150)
-	 		//{
-	 		//tifis.y += tifis.velocidad;
-	 		//}
+	 		else if (tifis.x > 130 && tifis.y < 300)
+	 			{
+	 			tifis.y += tifis.velocidad;
+	 			}
+	 			else if (tifis.x > 130 && tifis.y < 300)
+	 			{
+	 			tifis.y += tifis.velocidad;
+	 			}
+	 			else if (tifis.y > 240 && tifis.y < 300)
+	 			{
+	 			tifis.y += tifis.velocidad;
+	 			}
+	 			else if (tifis.y > 240 && tifis.x < 120)
+	 			{
+	 			tifis.y += tifis.velocidad;
+	 			}
+	 			else if (tifis.y > 390)
+	 			{
+	 			tifis.y += tifis.velocidad;
+	 			}
+	 	}
 	 }
 	 if (codigo == teclas.LEFT)
 	 {
