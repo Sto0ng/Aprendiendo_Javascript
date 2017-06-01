@@ -25,7 +25,7 @@ var tifis = {
 	velocidad: 10
 };
 var liz = {
-	lizURL :"liz.png",
+	lizURL :"imagenes/liz.png",
 	lizOK : false,
 	x: 400,
 	y: 200
@@ -69,8 +69,10 @@ function teclado (datos)
 
 	 if (codigo == teclas.UP)
 	 {
-	 	tifis.y -= tifis.velocidad;
-	 	
+	 	if (tifis.y > 0)
+	 	{
+	 		tifis.y -= tifis.velocidad;
+	 	}
 	 }
 	 if (codigo == teclas.DOWN)
 	 {
@@ -80,36 +82,45 @@ function teclado (datos)
 	 		{
 	 		tifis.y += tifis.velocidad;
 	 		}
-	 		else if (tifis.x > 130 && tifis.y < 300)
-	 			{
+	 		else if (tifis.y > 0 && tifis.y < 130)
+	 		{
 	 			tifis.y += tifis.velocidad;
-	 			}
+	 		}
 	 			else if (tifis.x > 130 && tifis.y < 300)
-	 			{
-	 			tifis.y += tifis.velocidad;
-	 			}
-	 			else if (tifis.y > 240 && tifis.y < 300)
-	 			{
-	 			tifis.y += tifis.velocidad;
-	 			}
-	 			else if (tifis.y > 240 && tifis.x < 120)
-	 			{
-	 			tifis.y += tifis.velocidad;
-	 			}
-	 			else if (tifis.y > 390)
-	 			{
-	 			tifis.y += tifis.velocidad;
-	 			}
+	 				{
+	 				tifis.y += tifis.velocidad;
+	 				}
+	 				else if (tifis.x > 130 && tifis.y < 300)
+	 				{
+	 				tifis.y += tifis.velocidad;
+	 				}
+	 				else if (tifis.y > 240 && tifis.y < 300)
+	 				{
+	 				tifis.y += tifis.velocidad;
+	 				}
+	 				else if (tifis.y > 240 && tifis.x < 120)
+	 				{
+	 				tifis.y += tifis.velocidad;
+	 				}
+	 				else if (tifis.y > 390)
+	 				{
+	 				tifis.y += tifis.velocidad;
+	 				}
 	 	}
 	 }
 	 if (codigo == teclas.LEFT)
 	 {
-	 	tifis.x -= tifis.velocidad;
-	 	
+	 	if (tifis.x > -10)
+	 	{
+	 		tifis.x -= tifis.velocidad;
+	 	}
 	 }
 	 if (codigo == teclas.RIGTH)
 	 {
-	 	tifis.x += tifis.velocidad;
+	 	if (tifis.x < 460)
+	 	{
+	 		tifis.x += tifis.velocidad;
+	 	}
 	 }
 	 direccion = codigo;
 	 dibujar();
