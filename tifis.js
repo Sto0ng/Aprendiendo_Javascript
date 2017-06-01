@@ -2,7 +2,7 @@ var tablero,direccion;
 
 
 var fondo = {
-	imagenURL: "fondo.png",
+	imagenURL: "imagenes/fondo.png",
 	imagenOK: false
 };
 var teclas = {
@@ -14,10 +14,10 @@ var teclas = {
 var tifis = {
 	x: 100,
 	y: 100,
-	tifisURL_FRE: "tifis_frente.png",
-	tifisURL_DE: "tifis_der.png",
-	tifisURL_IZ: "tifis_isq.png",
-	tifisURL_AR: "tifis_esp.png",
+	tifisURL_FRE: "imagenes/tifis_frente.png",
+	tifisURL_DE: "imagenes/tifis_der.png",
+	tifisURL_IZ: "imagenes/tifis_isq.png",
+	tifisURL_AR: "imagenes/tifis_esp.png",
 	tifisOK_fre: false,
 	tifisOK_der: false,
 	tifisOK_iz: false,
