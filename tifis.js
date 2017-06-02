@@ -1,17 +1,17 @@
 var tablero,direccion;
 
 
-var fondo = {
+const fondo = {
 	imagenURL: "imagenes/fondo.png",
 	imagenOK: false
 };
-var teclas = {
+const teclas = {
 	UP: 38,
 	DOWN: 40,
 	LEFT: 37,
 	RIGTH: 39
 };
-var tifis = {
+const tifis = {
 	x: 100,
 	y: 100,
 	tifisURL_FRE: "imagenes/tifis_frente.png",
@@ -24,7 +24,7 @@ var tifis = {
 	tifisOK_ar: false,
 	velocidad: 10
 };
-var liz = {
+const liz = {
 	lizURL :"imagenes/liz.png",
 	lizOK : false,
 	x: 400,
@@ -174,7 +174,7 @@ function teclado (datos)
 	 		{
 	 			tifis.x += tifis.velocidad;
 	 		}
-	 		if (tifis.y > 250 && tifis.y < 310 && tifis.x > 160)
+	 		if (tifis.y > 240 && tifis.y < 310 && tifis.x > 150)
 	 		{
 	 			tifis.x += tifis.velocidad;	
 	 		}
@@ -182,7 +182,7 @@ function teclado (datos)
 	 		{
 	 			tifis.x += tifis.velocidad;
 	 		}
-	 		if (tifis.y > 250 && tifis.x < 140 && tifis.y < 310)
+	 		if (tifis.y > 240 && tifis.x < 140 && tifis.y < 310)
 	 		{
 	 			tifis.x += tifis.velocidad;
 	 		}
