@@ -166,7 +166,34 @@ function teclado (datos)
 	 {
 	 	if (tifis.x < 460)
 	 	{
-	 		tifis.x += tifis.velocidad;
+	 		if (tifis.x < 140 && tifis.y < 160)
+	 		{
+	 			tifis.x += tifis.velocidad;
+	 		}
+	 		if (tifis.x > 130 && tifis.y < 310 && tifis.x < 160)
+	 		{
+	 			tifis.x += tifis.velocidad;
+	 		}
+	 		if (tifis.y > 250 && tifis.y < 310 && tifis.x > 160)
+	 		{
+	 			tifis.x += tifis.velocidad;	
+	 		}
+ 			if (tifis.x > 230 && tifis.y < 260)
+	 		{
+	 			tifis.x += tifis.velocidad;
+	 		}
+	 		if (tifis.y > 250 && tifis.x < 140 && tifis.y < 310)
+	 		{
+	 			tifis.x += tifis.velocidad;
+	 		}
+	 		if (tifis.y >= 300 && tifis.x < 110)
+	 		{
+	 			tifis.x += tifis.velocidad;	
+	 		}
+	 		if (tifis.y > 390 && tifis.x > 100)
+	 		{
+	 			tifis.x += tifis.velocidad;	
+	 		}
 	 	}
 	 }
 	 direccion = codigo;
