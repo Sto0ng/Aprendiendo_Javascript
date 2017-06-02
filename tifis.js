@@ -71,14 +71,41 @@ function teclado (datos)
 	 {
 	 	if (tifis.y > 0)
 	 	{
-	 		tifis.y -= tifis.velocidad;
+	 		if (tifis.x < 140 && tifis.y < 160)
+	 		{
+	 			tifis.y -= tifis.velocidad;
+	 		}
+	 		if (tifis.x > 130 && tifis.y < 310 && tifis.x < 170)
+	 		{
+	 			tifis.y -= tifis.velocidad;
+	 		}
+	 		if (tifis.y > 250 && tifis.y < 310 && tifis.x > 160)
+	 		{
+	 			tifis.y -= tifis.velocidad;	
+	 		}
+ 			if (tifis.x > 230 && tifis.y < 260)
+	 		{
+	 			tifis.y -= tifis.velocidad;
+	 		}
+	 		if (tifis.y > 250 && tifis.x < 140 && tifis.y < 310)
+	 		{
+	 			tifis.y -= tifis.velocidad;
+	 		}
+	 		if (tifis.y >= 300 && tifis.x < 120)
+	 		{
+	 			tifis.y -= tifis.velocidad;	
+	 		}
+	 		if (tifis.y > 400 && tifis.x > 110)
+	 		{
+	 			tifis.y -= tifis.velocidad;	
+	 		}
 	 	}
 	 }
 	 if (codigo == teclas.DOWN)
 	 {
 	 	if (tifis.y < 450)
 	 	{
-	 		if (tifis.x < 150 && tifis.y < 150)
+	 		if (tifis.x < 140 && tifis.y < 150)
 	 		{
 	 			tifis.y += tifis.velocidad;
 	 		}
@@ -94,7 +121,7 @@ function teclado (datos)
 	 		{
 	 			tifis.y += tifis.velocidad;	
 	 		}
-	 		if (tifis.y > 390 && tifis.x > 120)
+	 		if (tifis.y > 390 && tifis.x > 110)
 	 		{
 	 			tifis.y += tifis.velocidad;	
 	 		}
