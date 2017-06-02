@@ -132,7 +132,34 @@ function teclado (datos)
 	 {
 	 	if (tifis.x > -10)
 	 	{
-	 		tifis.x -= tifis.velocidad;
+	 		if (tifis.x < 150 && tifis.y < 160)
+	 		{
+	 			tifis.x -= tifis.velocidad;
+	 		}
+	 		if (tifis.x > 140 && tifis.y < 310 && tifis.x < 170)
+	 		{
+	 			tifis.x -= tifis.velocidad;
+	 		}
+	 		if (tifis.y > 240 && tifis.y < 310 && tifis.x > 160)
+	 		{
+	 			tifis.x -= tifis.velocidad;	
+	 		}
+	 		if (tifis.x > 240 && tifis.y < 260)
+	 		{
+	 			tifis.x -= tifis.velocidad;
+	 		}
+	 		if (tifis.y > 240 && tifis.x < 150 && tifis.y < 310)
+	 		{
+	 			tifis.x -= tifis.velocidad;
+	 		}
+	 		if (tifis.y >300 && tifis.x < 120)
+	 		{
+	 			tifis.x -= tifis.velocidad;	
+	 		}
+	 		if (tifis.y > 390 && tifis.x > 110)
+	 		{
+	 			tifis.x -= tifis.velocidad;	
+	 		}
 	 	}
 	 }
 	 if (codigo == teclas.RIGTH)
